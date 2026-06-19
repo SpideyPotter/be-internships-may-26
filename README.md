@@ -2,6 +2,16 @@
 
 Build a minimal production-leaning service that can **handle load**, **rate limit**, and **avoid duplicates** via idempotency.
 
+## Quick Start
+
+```bash
+npm install
+npm test
+npm run dev
+```
+
+Requires **Node.js 20 LTS** (native module `better-sqlite3`).
+
 ## Endpoints (to keep)
 - `POST /v1/signals`
   - body: `{ "userId": "string", "type": "string", "payload": "string" }`
