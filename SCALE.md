@@ -51,3 +51,7 @@
 **Rough cost (AWS, us-east-1):** ~$800–1.5k/mo — 8× `c6i.large` app nodes, `db.r6g.large` Postgres, `cache.r6g.large` Redis, ALB.
 
 **Capacity math:** 10k RPS × ~2ms app + ~5ms DB (pooled) ≈ 70ms aggregate; horizontal scale keeps per-node load under ~1k RPS with headroom for bursts.
+
+The complete architecture diagram is available here:
+**Figma Board:**  
+https://www.figma.com/board/tCEo4KhURg4m64LspHYdec/Signals-Service---10k-RPS-Architecture
